@@ -1,0 +1,165 @@
+/**************************************LISTS***********************************/
+
+.empty-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-container .empty-div{
+    width: 60%;
+    height: 60%;
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.empty-container .empty-div .empty-title{
+    text-align: center;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+}
+
+.empty-container .empty-div .empty-icon i{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.empty-container .back-home-btn button{
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--ct-color);
+    font-family: 'Montserrat';
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.empty-container .back-home-btn button:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 1;
+}
+
+.list-container{
+    width: 100%;
+    height: 90%;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-container .list-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-container .list-title p{
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    text-decoration: underline;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.list-container .list-title p:hover{
+    opacity: 1;
+}
+
+.list-container .list-title h1{
+    font-family: 'Libre Caslon Text';
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.list-container .list-elements{
+    width: 100%;
+    height: 90%;
+}
+
+.list-container .list-elements .list-element{
+    display: flex;
+    align-items: center;
+}
+
+.list-element .ls-img {
+    width: 120px;
+    height: 200px;
+    border-radius: 13px;
+}
+
+.list-element .ls-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.list-element .list-info{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 0 0.8rem;
+    color: var(--text-color);
+}
+
+.list-info .title-author h4{
+    font-family: 'Libre Caslon Text';
+}
+
+.list-info .title-author p{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+}
+
+.list-info .info{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+}
+
+.list-info .button-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-info .button-icon i{
+    color: var(--text-color);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1.1rem;
+}
+
+.list-info .button-icon i:hover{
+    opacity: 1;
+}
+
+.list-info .button-icon button{
+    border: none;
+    padding: 0.5rem 1.7rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.list-info .button-icon button:hover{
+    opacity: 1;
+}

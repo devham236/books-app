@@ -1,0 +1,457 @@
+/***********************************SKELETON*************************************/
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+.skeleton-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skeleton-title{
+    width: 100%;
+    height: 1.3rem;
+}
+
+.skeleton-img i{
+    font-size: 3.5rem;
+    opacity: 0.5;
+}
+
+.skeleton-publisher{
+    width: 50%;
+    height: 1rem;
+}
+
+.skeleton-author{
+    width: 50%;
+    margin-top: 0.3rem;
+    height: 1rem;
+}
+
+.skeleton-button{
+    width: 70%;
+    height: 2rem;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(36, 62%, 60%);
+    }
+
+    100% {
+        background-color: hsl(36, 62%, 75%);
+    }
+}
+
+/********************************************************************************/
+
+
+/****************************************NAVBAR************************************/
+.navbar{
+    width: 100%;
+    height: 10%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+}
+
+.Link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* .navbar .nav-title h3{
+    text-transform: uppercase;
+} */
+
+.navbar .user-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.navbar .user-icon i{
+    color: var(--bg-color);
+}
+
+.navbar .user-icon:hover{
+    opacity: 1;
+}
+
+.navbar .user-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .links{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.navbar .links .link{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+
+.navbar .links .link i{
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.navbar i{
+    position: relative;
+}
+
+.navbar i div{
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    width: 18px;
+    height: 18px;
+    background-color: #ff4d4d;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .links .link a{
+    font-weight: 800;
+}
+
+.nav-elements .switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.nav-elements .switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.nav-elements .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--text-color);
+    border-radius: 20px;
+}
+
+.nav-elements .slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    top: 4px;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.nav-elements input:checked + .slider::before{
+    transform: translateX(26px);
+}
+/**********************************************************************************/
+
+
+/***************************************HOMEPAGE***********************************/
+.homepage-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-container .top-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.homepage-container .title-search-div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color);
+    margin-left: 5rem;
+}
+
+.title-search-div .title h1{
+    font-family: 'Libre Caslon Text';
+    font-weight: 200;
+    font-size: 2.3rem;
+}
+
+.title-search-div .title p{
+    font-family: 'Montserrat';
+    margin: 0.7rem 0 1.7rem 0;
+}
+
+.title-search-div .search{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title-search-div .input-empty{
+    position: absolute;
+    bottom: -2.4rem;
+    background-color: var(--bg-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+}
+
+.title-search-div .search input{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    opacity: 0.7;
+    transition: var(--transition);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.title-search-div .search input:focus{
+    outline: none;
+    opacity: 1;
+}
+
+.title-search-div .search input::-webkit-input-placeholder {
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.title-search-div .search i{
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: var(--transition);
+    opacity: 0.7; 
+}
+
+.title-search-div .search i:hover{
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 1px 10px 0px;
+    opacity: 1;
+}
+
+.homepage-container .img-container{
+    width: 60%;
+    height: 100%;
+    margin-right: 5rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 200px 200px;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+
+.top-container .img-container .icon-container .icon-div{
+    width: 27px;
+    height: 27px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.homepage-container .img-container .grid-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.bestseller-element .icon-container .icon-div{
+    width: 27px;
+    height: 27px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container{
+    position: relative;
+}
+
+.icon-div{
+    animation: fade-in var(--transition) ease-in-out;
+}
+
+.icon-container .icon-div{
+    position: absolute;
+    top: 0;
+    font-size: 1.1rem;
+    
+}
+
+.icon-container .icon-div i{
+    color: var(--text-color);
+}
+
+.icon-container .heart{
+    right: 0;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.icon-container .bookmark{
+    left: 0;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.homepage-container .bottom-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-container .container-title{
+    width: 95%;
+}
+
+.bottom-container .container-title h1{
+    font-family: 'Libre Caslon Text';
+    font-weight: 200;
+    font-size: 2.3rem;
+    color: var(--text-color);
+}
+
+.homepage-container .bottom-container .bestseller-div{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bestseller-div .bestseller-element{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+}
+
+.bestseller-div .bestseller-element .bs-img{
+    width: 120px;
+    height: 200px;
+}
+
+.bestseller-div .bestseller-element .bs-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.35); 
+    
+}
+
+.bestseller-div .bestseller-element .bestseller-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(90% - 120px);
+    height: 200px;
+}
+
+.bestseller-info .publisher span{
+    font-weight: 700;
+}
+
+.bestseller-info .publisher p{
+    font-family: 'Montserrat';
+    opacity: 0.6;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.bestseller-info .title-author{
+    color: var(--text-color);
+    
+}
+
+.bestseller-info .title-author h4{
+    font-family: 'Libre Caslon Text';
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+}
+
+.bestseller-info .title-author p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.bestseller-info .buy-btn button{
+    border: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat';
+    cursor: pointer;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.bestseller-info .buy-btn i{
+    margin-right: 0.3rem;
+}
+
+.bestseller-info .buy-btn button:hover{
+    opacity: 1;
+}
+
+/**********************************************************************************/
