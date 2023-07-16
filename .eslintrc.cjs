@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 module.exports = {
   env: {
     browser: true,
@@ -21,7 +20,6 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
-    // "prettier/prettier": 0,
     "react/prop-types": "off",
     "no-undef": "off",
     "no-unused-vars": "off",
