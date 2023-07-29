@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect } from "react"
 
 const Context = createContext()
 
-function ContextProvider(props) {
+function ContextProvider({ children }) {
   const [input, setInput] = useState("")
   const [inputEmpty, setInputEmpty] = useState(false)
   const [pathname, setPathName] = useState(window.location.pathname)
@@ -147,7 +147,7 @@ function ContextProvider(props) {
         favoritesItems,
       }}
     >
-      {props.children}
+      {children}
     </Context.Provider>
   )
 }
